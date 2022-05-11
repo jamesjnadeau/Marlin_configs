@@ -1006,14 +1006,15 @@
 // #define NOZZLE_TO_PROBE_OFFSET { -42, -9.5, -3.17 }
 // Blockhead/petsfang
 // #define NOZZLE_TO_PROBE_OFFSET { -42, -5, -3.17 }
-// Biqu H2 40 to 35mm fan mount
-#define NOZZLE_TO_PROBE_OFFSET {-25, -41, -3.17 }
+// // Biqu H2 40 to 35mm fan mount
+// #define NOZZLE_TO_PROBE_OFFSET {-25, -41, -3.17 }
+#define NOZZLE_TO_PROBE_OFFSET {-24, -27, -3.17 }
 // Biqu H2 right parts fan mount
 //#define NOZZLE_TO_PROBE_OFFSET {0, -32, -3.17 }
 
 // Most probes should stay away from the edges of the bed, but
 // with NOZZLE_AS_PROBE this can be negative for a wider probing area.
-#define PROBING_MARGIN 10
+#define PROBING_MARGIN 3
 
 // X and Y axis travel speed (mm/min) between probes
 #define XY_PROBE_FEEDRATE (100*60)
@@ -1180,14 +1181,14 @@
 
 // The size of the print bed
 #define X_BED_SIZE 235
-#define Y_BED_SIZE 235
+#define Y_BED_SIZE 225
 
 // Travel limits (mm) after homing, corresponding to endstop positions.
 #define X_MIN_POS -19
 #define Y_MIN_POS 0
 #define Z_MIN_POS 0
 #define X_MAX_POS (X_BED_SIZE + 10)
-#define Y_MAX_POS (Y_BED_SIZE + 4)
+#define Y_MAX_POS (Y_BED_SIZE)
 #define Z_MAX_POS 250
 
 /**
